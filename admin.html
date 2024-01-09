@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="admin.css">
+    <script src="https://kit.fontawesome.com/c3e4037687.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- <div class="top">
+            <h2>Admin</h2>
+            <a href="/index.html"><button>Log Out</button></a>
+        </div> -->
+        <div class="top">
+            <a href="index.html" id="page"><i class="fa-solid fa-calendar-check"></i></a>
+            <label for="page">Admin Account</label>
+            <nav class="navi">
+
+                <input type="search" id="search" name="search" placeholder="Type Here" required>
+                <button type="submit" name="search-btn" id="search-btn">Search</button>
+
+                <select name="" id="LoginDropDown" class="LoginDropDown">
+                    <option value="" selected> Menu </option>
+                    <option value="index.html">Home</option>
+                    <option value="">About</option>
+                    <option value="">Contact</option>
+                    <option value="index.html">Logout</option>
+
+                </select>
+            </nav>
+        </div>
+        <div class="main">
+            <form id="add-teacher">
+                <h2>Add Teacher</h2>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="text" id="dept" name="dept" placeholder="Department" required>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit" name="add-btn" id="add-btn"><i class="fa-solid fa-user-plus"></i>Add</button>
+            </form>
+            <div class="delete-teacher">
+                <h2>Update / Delete Teacher</h2>
+                <button id="refresh-delete-teacher"><i class="fa-solid fa-rotate-right"></i></button>
+            </div>
+            <div class="approve-registration">
+                <h2>Approve Registration</h2>
+                <button id="refresh-approve-registration"><i class="fa-solid fa-rotate-right"></i></button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/10.7.1/firebase-app.js"></script>
+
+    <script src="admin.js"></script>
+
+
+    <script>
+        const dropdown = document.getElementById("LoginDropDown");
+
+        dropdown.addEventListener("change", function () {
+            const selectedValue = dropdown.value;
+            if (selectedValue !== "") {
+                window.location.href = selectedValue;
+            }
+        });
+    </script>
+</body>
+
+</html>

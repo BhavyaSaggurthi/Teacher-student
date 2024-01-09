@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link rel="stylesheet" href="student.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/c3e4037687.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <!-- <div class="top">
+            <h2>Student Account</h2>
+            <a href="/index.html"><button>Log Out</button></a>
+        </div> -->
+
+        <div class="top">
+            <a href="index.html" id="page"><i class="fa-solid fa-calendar-check"></i></a>
+            <label for="page">Student Account</label>
+            <nav class="navi">
+                
+                <input type="search" id="search" name="search" placeholder="Type Here" required>
+                <button type="submit" name="search-btn" id="search-btn">Search</button>
+                
+                <select name="" id="LoginDropDown" class="LoginDropDown" >
+                    <option value="" selected>  Menu  </option>
+                    <option value="index.html">Home</option>
+                    <option value="">About</option>
+                    <option value="">Contact</option>
+                    <option value="index.html">Logout</option>
+
+                </select>
+            </nav>
+        </div>
+        <!-- <div class="search-box">
+            <input type="search" id="search" name="search" placeholder="Teacher's Name" required>
+            <button type="submit" name="search-btn" id="search-btn">Search</button>
+        </div> -->
+
+        <div class="main">
+            <form id="appointment">
+                <h2>Book Appointment</h2>
+                <h2 class="appointment-alert">Booking Appointment is Successful</h2>
+                <input type="text" id="teacher_name" name="teacher_name" placeholder="Teacher's Name" required>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                <input type="date" id="date" name="date" placeholder="Date" required>
+                <input type="time" id="time" name="time" placeholder="Time" required>
+                <input type="text" id="student_name" name="student_name" placeholder="Student's Name" required>
+                <button type="submit" name="submit_btn" id="submit_btn"><i class="fa-solid fa-calendar-check"></i>Submit</button>
+            </form>
+
+            <form id="message">
+                <h2>Send Message</h2>
+                <h2 class="message-alert">Message is Sent Successfully</h2>
+
+                <input type="text" id="teacher_name" name="teacher_name" placeholder="Teacher's Name" required>
+                <!-- <input type="text" id="msg" name="msg" placeholder="Message" required> -->
+                <textarea name="msg" id="msg" cols="32" rows="5" placeholder="Message" required></textarea>
+                <input type="text" id="student_name" name="student_name" placeholder="Student's Name" required>
+                <button type="submit" name="msg_btn" id="msg_btn"><i class="fa-solid fa-paper-plane"></i>Send</button>
+            </form>
+        </div>
+
+    </div>
+    <!-- <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/10.7.1/firebase-app.js"></script>
+
+    <script src="student.js"></script>
+
+    <script>
+        const dropdown = document.getElementById("LoginDropDown");
+    
+        dropdown.addEventListener("change", function () {
+            const selectedValue = dropdown.value;
+            if (selectedValue !== "") {
+                window.location.href = selectedValue;
+            }
+        });
+    </script>
+</body>
+</html>

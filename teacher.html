@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="teacher.css">
+    <script src="https://kit.fontawesome.com/c3e4037687.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- <div class="top">
+            <h2>Teacher Account</h2>
+            <a href="/index.html"><button>Log Out</button></a>
+        </div> -->
+        <div class="top">
+            <a href="index.html" id="page"><i class="fa-solid fa-calendar-check"></i></a>
+            <label for="page">Teacher Account</label>
+            <nav class="navi">
+
+                <input type="search" id="search" name="search" placeholder="Type Here" required>
+                <button type="submit" name="search-btn" id="search-btn">Search</button>
+
+                <select name="" id="LoginDropDown" class="LoginDropDown">
+                    <option value="" selected> Menu </option>
+                    <option value="index.html">Home</option>
+                    <option value="">About</option>
+                    <option value="">Contact</option>
+                    <option value="index.html">Logout</option>
+
+                </select>
+            </nav>
+        </div>
+        <div class="main">
+            <form id="appointment">
+                <h2>Schedule Appointment</h2>
+                <h2 class="appointment-alert">Booking Appointment is Successful</h2>
+
+                <input type="text" id="student-name" name="student-name" placeholder="Student's Name" required>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                <input type="date" id="date" name="date" placeholder="Date" required>
+                <input type="time" id="time" name="time" placeholder="Time" required>
+                <input type="text" id="teacher-name" name="teacher-name" placeholder="Teacher's Name" required>
+                <button type="submit" name="submit_btn" id="submit_btn"><i class="fa-solid fa-calendar-check"></i>Submit</button>
+
+            </form>
+
+            <div class="approve-appointment">
+                <h2>Approve / Cancel Appointment</h2>
+                <button id="refresh-approve-appointment"><i class="fa-solid fa-rotate-right"></i></button>
+
+            </div>
+
+            <div class="view-appointment">
+                <h2>View All Appointment</h2>
+                <button id="refresh-view-appointment"><i class="fa-solid fa-rotate-right"></i></button>
+            </div>
+
+            <div class="view-msg">
+                <h2>View Messages</h2>
+                <button id="refresh-view-msg"><i class="fa-solid fa-rotate-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/10.7.1/firebase-app.js"></script>
+
+    <script src="teacher.js"></script>
+
+
+    <script>
+        const dropdown = document.getElementById("LoginDropDown");
+
+        dropdown.addEventListener("change", function () {
+            const selectedValue = dropdown.value;
+            if (selectedValue !== "") {
+                window.location.href = selectedValue;
+            }
+        });
+    </script>
+</body>
+
+</html>

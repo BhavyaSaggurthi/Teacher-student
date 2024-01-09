@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* .container{
+    width: 100%;
+    height: auto;
+    background-image: url("https://img.freepik.com/free-vector/education-pattern-background-doodle-style_53876-115365.jpg?size=626&ext=jpg");
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+} */
+/* .top{
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    width: 100%;
+} */
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    width: 100%;
+}
+#add-teacher{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: silver;
+    box-shadow: 0 5px 15px black;
+}
+.delete-teacher{
+    width: 25%;
+    /* height: 350px; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: silver;
+    box-shadow: 0 5px 15px black;
+}
+.approve-registration{
+    width: 25%;
+    /* height: 350px; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: silver;
+    box-shadow: 0 5px 15px black;
+}
+button{
+    align-self: center;
+ }
+/* form input{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+button{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    background-color: rgb(35, 247, 35);
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+} */
+form input{
+    width: 75%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+form button{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    background-color: rgb(168, 230, 255);
+} 
+
+
+
+@media screen and (max-width : 995px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+        height: auto;
+        background-image: url("https://png.pngtree.com/background/20210712/original/pngtree-cute-hand-drawn-style-math-education-green-pink-background-picture-image_1176712.jpg");
+    
+    }
+    #add-teacher{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        margin: 10px;
+        border: 3px solid black;
+        border-radius: 15px;
+        background-color: silver;
+        box-shadow: 0 5px 15px black;
+    }
+    .delete-teacher{
+        width: 40%;
+        /* height: 350px; */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        margin: 10px;
+        border: 3px solid black;
+        border-radius: 15px;
+        background-color: silver;
+        box-shadow: 0 5px 15px black;
+    }
+    .approve-registration{
+        width: 40%;
+        /* height: 350px; */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        margin: 10px;
+        border: 3px solid black;
+        border-radius: 15px;
+        background-color: silver;
+        box-shadow: 0 5px 15px black;
+    }
+}
+@media screen and (max-width : 605px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+        height: auto;
+        background-image: url("https://png.pngtree.com/background/20210712/original/pngtree-cute-hand-drawn-style-math-education-green-pink-background-picture-image_1176712.jpg");
+    
+    }
+    #add-teacher{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        margin: 10px;
+        border: 3px solid black;
+        border-radius: 15px;
+        background-color: silver;
+        box-shadow: 0 5px 15px black;
+    }
+    .delete-teacher{
+        width: 70%;
+        /* height: 350px; */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        margin: 10px;
+        border: 3px solid black;
+        border-radius: 15px;
+        background-color: silver;
+        box-shadow: 0 5px 15px black;
+    }
+    .approve-registration{
+        width: 70%;
+        /* height: 350px; */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        margin: 10px;
+        border: 3px solid black;
+        border-radius: 15px;
+        background-color: silver;
+        box-shadow: 0 5px 15px black;
+    }
+}
